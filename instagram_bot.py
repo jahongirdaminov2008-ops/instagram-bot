@@ -14,7 +14,7 @@ from telegram.ext import (
 )
 
 # ===================== SOZLAMALAR =====================
-BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"  # @BotFather dan olingan token
+BOT_TOKEN = "8628632426:AAEQS7JyjenwymQcu5dE-Dd1MNC12k6RHuo"  # @BotFather dan olingan token
 # ======================================================
 
 logging.basicConfig(
@@ -137,7 +137,7 @@ async def download_video(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
 
 
 def main() -> None:
-    if BOT_TOKEN == "8628632426:AAEQS7JyjenwymQcu5dE-Dd1MNC12k6RHuo":
+    if BOT_TOKEN is None:
         print("❌ Xato: BOT_TOKEN o'rnatilmagan!")
         print("instagram_bot.py faylida BOT_TOKEN ni o'zgartiring.")
         return
